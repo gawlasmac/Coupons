@@ -1,0 +1,11 @@
+spring.application.name: Coupons
+spring.datasource.url: jdbc:h2:mem:coupons
+spring:
+  jpa:
+    show-sql: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka
+eureka.instance.prefer-ip-address: true
+feign.hystrix.enabled: false
